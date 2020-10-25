@@ -10,7 +10,7 @@ namespace oct23ShapesClassesPracticeCS.Shapes
         //private double _area;
         //private double _perimeter;
         //private string _color;
-        public double Area { get; }
+        public abstract double Area { get; }
       //  {
            // get
           //  {
@@ -21,7 +21,7 @@ namespace oct23ShapesClassesPracticeCS.Shapes
           //      _area = value;
            // }
        // }
-        public double Perimeter { get; }
+        public abstract double Perimeter { get; }
        // {
            // get
           //  {

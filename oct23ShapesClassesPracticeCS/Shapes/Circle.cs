@@ -4,9 +4,10 @@ using System.Text;
 
 namespace oct23ShapesClassesPracticeCS.Shapes
 {
-   public class Circle : Shape
+    public class Circle : Shape
     {
-        public float Radius { get; set; }
+        const double pi = 3.14;
+        public double Radius { get; set; }
         public double Diameter
         {
             get
@@ -14,22 +15,40 @@ namespace oct23ShapesClassesPracticeCS.Shapes
                 return Radius * 2;
             }
         }
-        public Circle (float area, float perimeter, string color)
-            : base (area, perimeter, color)
+        public Circle(string color)
+            : base(color)
         {
 
-            Color = color;
+            //overridden constructor
         }
-
-        public override void CalculateArea()
+        //pipeline data to base class
+        public Circle(double radius, string color)
+           : base(color)
         {
-            Area = 3.14 * (Radius * Radius);
+            Radius = radius;
+        }
+        public Circle() : base()
+        {
+            //default constructor
+        }
+        public override double Area 
+            {
+                get
+                {
+                    return pi*Radius* Radius;
+                }
+           
+
+            }
+
+        //public override void CalculateArea()
+       // {
+        //    Area = 3.14 * (Radius * Radius);
             
-
-        }
-        public override void CalculatePerimeter()
-        {
-            Perimeter = 2 * 3.14 * Radius;
-        }
+       // }
+       // public override void CalculatePerimeter()
+       // {
+        //    Perimeter = 2 * 3.14 * Radius;
+       // }
     }
 }
