@@ -37,18 +37,24 @@ namespace oct23ShapesClassesPracticeCS.Shapes
                 {
                     return pi*Radius* Radius;
                 }
-           
-
             }
 
+        public override double Perimeter
+        {
+            get
+            {
+                return  2 * pi * Radius;
+            }
+        }
+
         //public override void CalculateArea()
-       // {
+        // {
         //    Area = 3.14 * (Radius * Radius);
-            
-       // }
-       // public override void CalculatePerimeter()
-       // {
+
+        // }
+        // public override void CalculatePerimeter()
+        // {
         //    Perimeter = 2 * 3.14 * Radius;
-       // }
+        // }
     }
 }
