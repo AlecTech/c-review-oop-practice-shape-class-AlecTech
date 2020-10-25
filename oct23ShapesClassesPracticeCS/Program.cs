@@ -17,7 +17,11 @@ namespace oct23ShapesClassesPracticeCS
             circles.Add(new Rectangle(rectangles.Area, rectangles.Perimeter, Shape.Color()));
 
             List<Shape> triangles = new List<Shape>();
-            circles.Add(new Circle(triangles.Area, triangles.Perimeter, Shape.Color()));
+            circles.Add(new Triangle(triangles.Area, triangles.Perimeter, Shape.Color()));
+
+            Shape aShape = new Circle(10, 23, "black");
+            aShape = circles[0];
+        
         }
     }
 }

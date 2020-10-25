@@ -4,7 +4,7 @@ using System.Text;
 
 namespace oct23ShapesClassesPracticeCS.Shapes
 {
-    class Circle : Shape
+   public class Circle : Shape
     {
         public float Radius { get; set; }
         public double Diameter

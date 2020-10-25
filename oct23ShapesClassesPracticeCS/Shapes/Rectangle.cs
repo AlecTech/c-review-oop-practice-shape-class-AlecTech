@@ -4,10 +4,17 @@ using System.Text;
 
 namespace oct23ShapesClassesPracticeCS.Shapes
 {
-    class Rectangle : Shape
+    public class Rectangle : Shape
     {
         public double Length { get; set; }
         public double Width { get; set; }
+
+        public Rectangle(float area, float perimeter, string color)
+       : base(area, perimeter, color)
+        {
+
+            Color = color;
+        }
 
         public override void CalculateArea()
         {
