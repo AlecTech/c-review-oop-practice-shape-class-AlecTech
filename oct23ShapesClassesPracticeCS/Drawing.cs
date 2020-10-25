@@ -9,15 +9,16 @@ namespace oct23ShapesClassesPracticeCS
     public class Drawing
     {
        
-        private string _color;
-        private double _totalPerimeters;
+        //private string _color;
+        //private double _totalPerimeters;
         private List<Shape> Shapes { get; set; } = new List<Shape>();
 
+        //
         public Drawing()
         {
             //initialize the list here
         }
-
+        //encupsulation
         public double SpaceCovered
         {
             get
@@ -46,12 +47,14 @@ namespace oct23ShapesClassesPracticeCS
                 
                 return totalPerimeters;
             }
-           // set
-           // {
-            //    _totalPerimeters = value;
-           // }
+      
         }
 
+        public override string ToString()
+        {
+            return $"A drawing consisting of {Shapes.Count} shapes."; 
+        }
+        //poly
         public void Draw(Shape shape)
         {
 

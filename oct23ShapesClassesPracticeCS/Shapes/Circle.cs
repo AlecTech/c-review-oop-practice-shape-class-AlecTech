@@ -15,6 +15,7 @@ namespace oct23ShapesClassesPracticeCS.Shapes
                 return Radius * 2;
             }
         }
+        //inheritance
         public Circle(string color)
             : base(color)
         {

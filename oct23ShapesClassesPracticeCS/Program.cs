@@ -8,6 +8,23 @@ namespace oct23ShapesClassesPracticeCS
     {
         static void Main(string[] args)
         {
+
+            Drawing myDrawing = new Drawing();
+            myDrawing.Draw(new Circle(10, "white"));
+
+            Console.WriteLine($"Total Area covered by drawing {myDrawing.SpaceCovered}, Total perimeter covered by drawing {myDrawing.LinesDrawn} ");
+
+            Console.WriteLine(myDrawing.ToString());
+
+            myDrawing.Draw(new Circle(20, "green"));
+
+            Console.WriteLine($"Total Area covered by drawing {myDrawing.SpaceCovered}, Total perimeter covered by drawing {myDrawing.LinesDrawn} ");
+
+            Console.WriteLine(myDrawing.ToString());
+
+            Console.ReadLine();
+
+            /*
             Console.WriteLine("Hello World!");
 
             List<Shape> circles = new List<Shape>();
@@ -21,7 +38,7 @@ namespace oct23ShapesClassesPracticeCS
 
             Shape aShape = new Circle(10, 23, "black");
             aShape = circles[0];
-        
+        */
         }
     }
 }

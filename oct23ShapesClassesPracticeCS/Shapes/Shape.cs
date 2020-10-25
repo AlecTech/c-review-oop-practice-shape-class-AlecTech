@@ -32,11 +32,10 @@ namespace oct23ShapesClassesPracticeCS.Shapes
            //     _perimeter = value;
            // }
         //}
+        //encapsulation
         public string Color { get; set; }
         public Shape()
         {
-            //Area = 0;
-           // Perimeter = 0;
             Color = "White";
         }
         public Shape( string color)
