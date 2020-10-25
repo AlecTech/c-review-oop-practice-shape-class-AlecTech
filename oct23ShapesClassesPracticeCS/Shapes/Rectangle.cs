@@ -4,6 +4,7 @@ using System.Text;
 
 namespace oct23ShapesClassesPracticeCS.Shapes
 {
+    /*
     public class Rectangle : Shape
     {
         public double Length { get; set; }
@@ -25,4 +26,5 @@ namespace oct23ShapesClassesPracticeCS.Shapes
             Perimeter = 2*(Length + Width);
         }
     }
+    */
 }

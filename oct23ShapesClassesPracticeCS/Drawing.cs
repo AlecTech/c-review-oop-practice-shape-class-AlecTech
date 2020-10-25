@@ -8,10 +8,10 @@ namespace oct23ShapesClassesPracticeCS
 {
     public class Drawing
     {
-        private double _totalAreas;
+       
         private string _color;
         private double _totalPerimeters;
-        private List<Shape> Shapes { get; set; }
+        private List<Shape> Shapes { get; set; } = new List<Shape>();
 
         public Drawing()
         {
@@ -22,38 +22,49 @@ namespace oct23ShapesClassesPracticeCS
         {
             get
             {
-                return _totalAreas;
+                double totalAreas = 0;
+                foreach (var shape in Shapes)
+                {
+                    totalAreas += shape.Area;
+                   
+                }
+                return totalAreas;
             }
-            set
-            {
-                _totalAreas = value;
-            }
+         
         }
 
         public double LinesDrawn
         {
             get
             {
-                return _totalPerimeters;
+                double totalPerimeters = 0;
+                foreach (var shape in Shapes)
+                {
+                    totalPerimeters += shape.Perimeter;
+
+                }
+                
+                return totalPerimeters;
             }
-            set
-            {
-                _totalPerimeters = value;
-            }
+           // set
+           // {
+            //    _totalPerimeters = value;
+           // }
         }
 
-        public void Draw(Shape)
+        public void Draw(Shape shape)
         {
-           
 
-            //List<Shapes> = new List<Circle>();
-            //for(int i=1; i <= allCircles; i++)
-            //{
-             //   placeholder.Add(new Circle(area, perimeter, color));
-           // }
-            //Room = room;
+            Shapes.Add(shape);
+          
            
         }
 
     }
 }
+//List<Shapes> = new List<Circle>();
+//for(int i=1; i <= allCircles; i++)
+//{
+//   placeholder.Add(new Circle(area, perimeter, color));
+// }
+//Room = room;

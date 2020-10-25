@@ -4,8 +4,10 @@ using System.Text;
 
 namespace oct23ShapesClassesPracticeCS.Shapes
 {
+    /*
     public class Triangle : Shape
     {
+        
         public double Base { get; set; }
         public double Height { get; set; }
 
@@ -23,5 +25,7 @@ namespace oct23ShapesClassesPracticeCS.Shapes
         {
             Perimeter = Base+Math.Sqrt((Base*Base) + 4*(Height*Height));
         }
+        
     }
+        */
 }
