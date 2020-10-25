@@ -7,10 +7,10 @@ namespace oct23ShapesClassesPracticeCS.Shapes
     //https://www.c-sharpcorner.com/article/oops-concepts-and-net-part-2-inheritance-abstraction-and/
     public abstract class Shape
     {
-        private float _area;
-        private string _color;
-        private float _perimeter;
-        public float Area { get; }
+        //private double _area;
+        //private double _perimeter;
+        //private string _color;
+        public double Area { get; }
       //  {
            // get
           //  {
@@ -21,7 +21,7 @@ namespace oct23ShapesClassesPracticeCS.Shapes
           //      _area = value;
            // }
        // }
-        public float Perimeter { get; }
+        public double Perimeter { get; }
        // {
            // get
           //  {
@@ -32,32 +32,18 @@ namespace oct23ShapesClassesPracticeCS.Shapes
            //     _perimeter = value;
            // }
         //}
-        public string Color
-        {
-            get
-            {
-                return _color;
-            }
-            set
-            {
-                _color = value;
-            }
-        }
-
+        public string Color { get; set; }
         public Shape()
         {
-            Area = 0;
-            Perimeter = 0;
+            //Area = 0;
+           // Perimeter = 0;
             Color = "White";
         }
-        public Shape(float area, float perimeter, string color)
+        public Shape( string color)
         {
-            Area = area;
-            Perimeter = perimeter;
             Color = color;
         }
-
-        public abstract void CalculateArea();
-        public abstract void CalculatePerimeter();
+        //public abstract void CalculateArea();
+        //public abstract void CalculatePerimeter();
     }
 }

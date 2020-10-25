@@ -46,11 +46,11 @@ namespace oct23ShapesClassesPracticeCS
         {
            
 
-            Shape = new List<Circle>();
-            for(int i=1; i <= allCircles; i++)
-            {
-                placeholder.Add(new Circle(area, perimeter, color));
-            }
+            //List<Shapes> = new List<Circle>();
+            //for(int i=1; i <= allCircles; i++)
+            //{
+             //   placeholder.Add(new Circle(area, perimeter, color));
+           // }
             //Room = room;
            
         }

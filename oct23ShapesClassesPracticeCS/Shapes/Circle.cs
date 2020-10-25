@@ -14,7 +14,6 @@ namespace oct23ShapesClassesPracticeCS.Shapes
                 return Radius * 2;
             }
         }
-
         public Circle (float area, float perimeter, string color)
             : base (area, perimeter, color)
         {
