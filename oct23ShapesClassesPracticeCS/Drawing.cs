@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using oct23ShapesClassesPracticeCS.Shapes;
 
@@ -11,6 +12,11 @@ namespace oct23ShapesClassesPracticeCS
         private string _color;
         private double _totalPerimeters;
         private List<Shape> Shapes { get; set; }
+
+        public Drawing()
+        {
+            //initialize the list here
+        }
 
         public double SpaceCovered
         {
@@ -36,9 +42,17 @@ namespace oct23ShapesClassesPracticeCS
             }
         }
 
-        public Drawing()
+        public void Draw(Shape)
         {
-            //initialize the list here
+           
+
+            Shape = new List<Circle>();
+            for(int i=1; i <= allCircles; i++)
+            {
+                placeholder.Add(new Circle(area, perimeter, color));
+            }
+            //Room = room;
+           
         }
 
     }
