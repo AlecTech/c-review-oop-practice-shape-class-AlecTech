@@ -22,23 +22,23 @@ namespace oct23ShapesClassesPracticeCS
 
             Console.WriteLine(myDrawing.ToString());
 
+
+            Drawing myDrawing2 = new Drawing();
+            myDrawing2.Draw(new Rectangle(10, 20, "red"));
+
+            Console.WriteLine($"Total Area covered by drawing {myDrawing2.SpaceCovered}, Total perimeter covered by drawing {myDrawing2.LinesDrawn} ");
+
+            Console.WriteLine(myDrawing2.ToString());
+
+            myDrawing2.Draw(new Rectangle(20,30, "yellow"));
+
+            Console.WriteLine($"Total Area covered by drawing {myDrawing2.SpaceCovered}, Total perimeter covered by drawing {myDrawing2.LinesDrawn} ");
+
+            Console.WriteLine(myDrawing2.ToString());
+
             Console.ReadLine();
 
-            /*
-            Console.WriteLine("Hello World!");
-
-            List<Shape> circles = new List<Shape>();
-            circles.Add(new Circle(circles.Area, circles.Perimeter, Shape.Color()));
-
-            List<Shape> rectangles = new List<Shape>();
-            circles.Add(new Rectangle(rectangles.Area, rectangles.Perimeter, Shape.Color()));
-
-            List<Shape> triangles = new List<Shape>();
-            circles.Add(new Triangle(triangles.Area, triangles.Perimeter, Shape.Color()));
-
-            Shape aShape = new Circle(10, 23, "black");
-            aShape = circles[0];
-        */
+      
         }
     }
 }
