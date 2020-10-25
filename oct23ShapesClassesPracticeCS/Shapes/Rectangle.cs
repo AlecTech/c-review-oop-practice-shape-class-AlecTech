@@ -4,27 +4,44 @@ using System.Text;
 
 namespace oct23ShapesClassesPracticeCS.Shapes
 {
-    /*
     public class Rectangle : Shape
     {
         public double Length { get; set; }
         public double Width { get; set; }
-
-        public Rectangle(float area, float perimeter, string color)
-       : base(area, perimeter, color)
+    
+        //inheritance
+        public Rectangle(string color)
+            : base(color)
         {
 
-            Color = color;
+            //overridden constructor
+        }
+        //pipeline data to base class
+        public Rectangle(double length, double width, string color)
+           : base(color)
+        {
+            Length = length;
+            Width = width;
+        }
+        public Rectangle() : base()
+        {
+            //default constructor
+        }
+        public override double Area
+        {
+            get
+            {
+                return Length * Width;
+            }
         }
 
-        public override void CalculateArea()
+        public override double Perimeter
         {
-            Area = Length * Width;
-        }
-        public override void CalculatePerimeter()
-        {
-            Perimeter = 2*(Length + Width);
+            get
+            {
+                return 2 * (Length + Width);
+            }
         }
     }
-    */
+    
 }
