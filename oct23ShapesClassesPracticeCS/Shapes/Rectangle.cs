@@ -9,7 +9,7 @@ namespace oct23ShapesClassesPracticeCS.Shapes
         public double Length { get; set; }
         public double Width { get; set; }
     
-        //inheritance
+        //inheritance used here for color
         public Rectangle(string color)
             : base(color)
         {

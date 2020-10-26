@@ -36,6 +36,19 @@ namespace oct23ShapesClassesPracticeCS
 
             Console.WriteLine(myDrawing2.ToString());
 
+            Drawing myDrawing3 = new Drawing();
+            myDrawing3.Draw(new Triangle(10, 30, "blue"));
+
+            Console.WriteLine($"Total Area covered by drawing {myDrawing3.SpaceCovered}, Total perimeter covered by drawing {myDrawing3.LinesDrawn} ");
+
+            Console.WriteLine(myDrawing3.ToString());
+
+            myDrawing3.Draw(new Triangle(20, 40, "black"));
+
+            Console.WriteLine($"Total Area covered by drawing {myDrawing3.SpaceCovered}, Total perimeter covered by drawing {myDrawing3.LinesDrawn} ");
+
+            Console.WriteLine(myDrawing3.ToString());
+
             Console.ReadLine();
 
       

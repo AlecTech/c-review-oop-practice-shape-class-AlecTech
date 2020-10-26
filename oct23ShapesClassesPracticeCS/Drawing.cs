@@ -8,12 +8,9 @@ namespace oct23ShapesClassesPracticeCS
 {
     public class Drawing
     {
-       
-        //private string _color;
-        //private double _totalPerimeters;
+      
         private List<Shape> Shapes { get; set; } = new List<Shape>();
 
-        //
         public Drawing()
         {
             //initialize the list here
@@ -31,9 +28,7 @@ namespace oct23ShapesClassesPracticeCS
                 }
                 return totalAreas;
             }
-         
         }
-
         public double LinesDrawn
         {
             get
@@ -47,27 +42,16 @@ namespace oct23ShapesClassesPracticeCS
                 
                 return totalPerimeters;
             }
-      
         }
 
         public override string ToString()
         {
             return $"A drawing consisting of {Shapes.Count} shapes."; 
         }
-        //poly
+        //polymorphism is used here to combine different shapes into one List
         public void Draw(Shape shape)
         {
-
             Shapes.Add(shape);
-          
-           
         }
-
     }
 }
-//List<Shapes> = new List<Circle>();
-//for(int i=1; i <= allCircles; i++)
-//{
-//   placeholder.Add(new Circle(area, perimeter, color));
-// }
-//Room = room;

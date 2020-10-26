@@ -9,11 +9,10 @@ namespace oct23ShapesClassesPracticeCS.Shapes
         public double Base { get; set; }
         public double Height { get; set; }
         
-        //inheritance
+        //inheritance implemented here
         public Triangle(string color)
             : base(color)
         {
-
             //overridden constructor
         }
         //pipeline data to base class
